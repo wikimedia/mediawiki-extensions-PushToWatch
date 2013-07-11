@@ -15,7 +15,7 @@
  * @copyright (C) 2013 cloudyks
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
- 
+
 if ( !defined( 'MEDIAWIKI' ) ) {
         die( 'This file is an extension to MediaWiki and thus not a valid entry point.' );
 }
@@ -24,10 +24,12 @@ $wgExtensionCredits['other'][] = array(
         'name' => 'PushToWatch',
         'version' => '0.1',
         'author' => 'cloudyks',
-        'description' => 'Allows to push a page to another user watchlist',
+        'descriptionmsg' => 'pushtowatch-desc',
         'url' => 'https://www.mediawiki.org/wiki/Extension:PushToWatch',
 );
- 
+
+$wgExtensionMessagesFiles['PushToWatch'] = dirname( __FILE__ ) . '/PushToWatch.i18n.php';
+
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'PushToWatch::ListUsers';
  
 Class PushToWatch {
