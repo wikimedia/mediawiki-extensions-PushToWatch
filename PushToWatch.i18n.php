@@ -31,6 +31,13 @@ $messages['de'] = array(
 	'pushtowatch-desc' => 'Ermöglicht den Transfer einer Seite auf die Beobachtungsliste eines anderen Benutzers',
 );
 
+/** French (français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'pushtowatch-desc' => 'Permet de pousser une page dans la liste de suivi d’un autre utilisateur',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
