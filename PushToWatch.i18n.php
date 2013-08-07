@@ -58,3 +58,17 @@ $messages['ja'] = array(
 $messages['mk'] = array(
 	'pushtowatch-desc' => 'Овозможува истакнување на страници во набљудувањата на други корисници',
 );
+
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'pushtowatch-desc' => 'ईतर सदस्यांच्या पहाऱ्याच्या सूचीत एखादे पान ढकलण्यास परवानगी देते',
+);
+
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'pushtowatch-desc' => "Permette de mannà 'na pàgene a 'n'otre elenghe de pàggene condrollate da 'n'otre utende",
+);
