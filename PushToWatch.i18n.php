@@ -66,6 +66,13 @@ $messages['mr'] = array(
 	'pushtowatch-desc' => 'ईतर सदस्यांच्या पहाऱ्याच्या सूचीत एखादे पान ढकलण्यास परवानगी देते',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author TheGabrielZaum
+ */
+$messages['pt-br'] = array(
+	'pushtowatch-desc' => 'Permite empurrar uma página à lista de vigiados de outro usuário',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
