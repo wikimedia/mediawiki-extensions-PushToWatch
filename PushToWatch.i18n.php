@@ -52,6 +52,13 @@ $messages['ja'] = array(
 	'pushtowatch-desc' => '別の利用者のウォッチリストにページを追加できるようにする',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'pushtowatch-desc' => 'Erméiglecht et eng Säit op engem anere Benotzer seng Iwwerwaachungslëscht ze setzen',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -78,4 +85,11 @@ $messages['pt-br'] = array(
  */
 $messages['roa-tara'] = array(
 	'pushtowatch-desc' => "Permette de mannà 'na pàgene a 'n'otre elenghe de pàggene condrollate da 'n'otre utende",
+);
+
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'pushtowatch-desc' => 'Дозволяє висунути сторінку до списку спостереження іншого користувача',
 );
