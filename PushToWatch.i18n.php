@@ -21,7 +21,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'pushtowatch-desc' => '{{desc|name=Push To Watch|url=https://www.mediawiki.org/wiki/Extension:PushToWatch}}',
+	'pushtowatch-desc' => '{{desc|name=Push To Watch|url=http://www.mediawiki.org/wiki/Extension:PushToWatch}}',
 );
 
 /** German (Deutsch)
