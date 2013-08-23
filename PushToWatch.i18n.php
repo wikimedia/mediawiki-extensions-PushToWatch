@@ -24,6 +24,13 @@ $messages['qqq'] = array(
 	'pushtowatch-desc' => '{{desc|name=Push To Watch|url=http://www.mediawiki.org/wiki/Extension:PushToWatch}}',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'pushtowatch-desc' => "Permite mandar una páxina a la llista de vixilancia d'otru usuariu",
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
