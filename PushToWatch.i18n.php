@@ -80,6 +80,13 @@ $messages['mr'] = array(
 	'pushtowatch-desc' => 'ईतर सदस्यांच्या पहाऱ्याच्या सूचीत एखादे पान ढकलण्यास परवानगी देते',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'pushtowatch-desc' => 'Permet de butar una pagina dins la lista de seguiment d’un autre utilizaire',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author TheGabrielZaum
  */
