@@ -52,6 +52,13 @@ $messages['gl'] = array(
 	'pushtowatch-desc' => 'Permite incluír unha páxina na lista de vixilancia doutro usuario',
 );
 
+/** Italian (italiano)
+ * @author Gianfranco
+ */
+$messages['it'] = array(
+	'pushtowatch-desc' => 'Consente di spostare una pagina alla lista di osservati speciali di un altro utente',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
