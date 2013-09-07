@@ -66,6 +66,13 @@ $messages['ja'] = array(
 	'pushtowatch-desc' => '別の利用者のウォッチリストにページを追加できるようにする',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'pushtowatch-desc' => 'Määd et müjjelesch, en Sigg en anderlücks Oppaßleß eren ze donn.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
