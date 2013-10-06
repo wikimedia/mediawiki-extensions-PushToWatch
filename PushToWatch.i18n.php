@@ -115,6 +115,13 @@ $messages['roa-tara'] = array(
 	'pushtowatch-desc' => "Permette de mannà 'na pàgene a 'n'otre elenghe de pàggene condrollate da 'n'otre utende",
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'pushtowatch-desc' => 'Позволяет добавить страницу в список наблюдения другого пользователя',
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  */
