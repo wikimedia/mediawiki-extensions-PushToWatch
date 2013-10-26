@@ -66,6 +66,13 @@ $messages['ja'] = array(
 	'pushtowatch-desc' => '別の利用者のウォッチリストにページを追加できるようにする',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'pushtowatch-desc' => '다른 사용자의 주시문서 목록에 문서를 추가할 수 있도록 합니다.',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
