@@ -101,6 +101,13 @@ $messages['mr'] = array(
 	'pushtowatch-desc' => 'ईतर सदस्यांच्या पहाऱ्याच्या सूचीत एखादे पान ढकलण्यास परवानगी देते',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'pushtowatch-desc' => 'Maakt het mogelijk een pagina op de volglijst van een andere gebruiker te plaatsen',
+);
+
 /** Occitan (occitan)
  * @author Cedric31
  */
