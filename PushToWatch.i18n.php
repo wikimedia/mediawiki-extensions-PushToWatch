@@ -142,3 +142,10 @@ $messages['ru'] = array(
 $messages['uk'] = array(
 	'pushtowatch-desc' => 'Дозволяє висунути сторінку до списку спостереження іншого користувача',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'pushtowatch-desc' => '允许推送页面到另一个用户的监视列表',
+);
