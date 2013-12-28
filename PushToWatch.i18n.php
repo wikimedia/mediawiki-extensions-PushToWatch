@@ -38,6 +38,13 @@ $messages['de'] = array(
 	'pushtowatch-desc' => 'Ermöglicht den Transfer einer Seite auf die Beobachtungsliste eines anderen Benutzers',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'pushtowatch-desc' => 'Zmóžnja pśenosowanje boka do wobglědowańki drugego wužywarja',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -50,6 +57,13 @@ $messages['fr'] = array(
  */
 $messages['gl'] = array(
 	'pushtowatch-desc' => 'Permite incluír unha páxina na lista de vixilancia doutro usuario',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'pushtowatch-desc' => 'Zmóžnja přenošowanje strony do wobkedźbowankow druheho wužiwarja',
 );
 
 /** Italian (italiano)
