@@ -45,6 +45,13 @@ $messages['dsb'] = array(
 	'pushtowatch-desc' => 'Zmóžnja pśenosowanje boka do wobglědowańki drugego wužywarja',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'pushtowatch-desc' => 'اجازه برای فشار یک صفحه به فهرست پیگیریهای کاربر دیگر',
+);
+
 /** French (français)
  * @author Gomoko
  */
