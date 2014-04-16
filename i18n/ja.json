@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shirayuki"
-        ]
-    },
-    "pushtowatch-desc": "別の利用者のウォッチリストにページを追加できるようにする"
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"pushtowatch-desc": "別の利用者のウォッチリストにページを追加できるようにする"
 }
