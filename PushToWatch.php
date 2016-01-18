@@ -60,7 +60,7 @@ Class PushToWatch {
     $body = "Hi $username,\r\n$wgUsername requested you to watch $pageurl\r\nCongrats !";
     $subject = "Watchlist injection - $title";
 
-    UserMailer::send( array($to, $from), $from, $subject, $body, $replyto );
+    UserMailer::send( array($to, $from), $from, $subject, $body, array( 'replyTo' => $replyto ) );
   }
 
   private static function getUsers($title){
