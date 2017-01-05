@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Raimond Spekking",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
-	"pushtowatch-desc": "{{desc|name=Push To Watch|url=http://www.mediawiki.org/wiki/Extension:PushToWatch}}"
+	"pushtowatch-desc": "{{desc|name=Push To Watch|url=https://www.mediawiki.org/wiki/Extension:PushToWatch}}"
 }
