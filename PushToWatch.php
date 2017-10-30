@@ -26,7 +26,6 @@ $wgExtensionCredits['other'][] = array(
 );
 
 $wgMessagesDirs['PushToWatch'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['PushToWatch'] = dirname( __FILE__ ) . '/PushToWatch.i18n.php';
 
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'PushToWatch::ListUsers';
 
