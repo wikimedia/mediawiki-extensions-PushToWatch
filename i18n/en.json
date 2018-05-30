@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"cloudyks"
+			"cloudyks",
+			"Zoranzoki21"
 		]
 	},
-	"pushtowatch-desc": "Allows to push a page to another user's watchlist"
+	"pushtowatch-desc": "Allows to push a page to another user's watchlist."
 }
