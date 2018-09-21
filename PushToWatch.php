@@ -46,8 +46,8 @@ Class PushToWatch {
 
     $medit = false;
 
-    $to      = new MailAddress( $user );
-    $from    = new MailAddress( $wgUser);
+    $to      = new MailAddress( $user->getEmail(), $user->getName(), $user->getRealName() );
+    $from    = new MailAddress( $wgUser->getEmail(), $wgUser->getName(), $wgUser->getRealName() );
     $replyto = new MailAddress( $wgNoReplyAddress );
 
     $pagename = $title->getPrefixedText();
