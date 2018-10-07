@@ -72,15 +72,15 @@ Class PushToWatch {
       );
 
       $join = array(
-        'mwuser',
+        'user',
         'watchlist'
       );
 
       $join_conds = array(
-        'watchlist' => array('JOIN', 'mwuser.user_id = watchlist.wl_user'),
+        'watchlist' => array('JOIN', 'user.user_id = watchlist.wl_user'),
       );
 
-      $res = $dbr->select($join, 'DISTINCT user_real_name', $where, null, $options, $join_conds);
+      $res = $dbr->select($join, 'DISTINCT user_real_name', $where, null, [], $join_conds);
 
       $output = "No follower";
 
@@ -103,7 +103,7 @@ Class PushToWatch {
     }
   }
 
-  function ListUsers( $sk, &$tpl ) {
+  public static function ListUsers( $sk, &$tpl ) {
     $title = $sk->getRelevantTitle();
     $output = "<hr/>";
 
