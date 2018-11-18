@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
-	"pushtowatch-desc": "允許新增頁面至另一個使用者的監視清單"
+	"pushtowatch-desc": "允許推送頁面至另一個使用者的監視清單"
 }
