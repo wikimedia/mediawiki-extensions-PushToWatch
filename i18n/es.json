@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Themasterriot"
+			"Themasterriot",
+			"MarcoAurelio"
 		]
 	},
-	"pushtowatch-desc": "Permite empujar una página a la lista de seguimiento de otro usuario"
+	"pushtowatch-desc": "Permite incluir una página en la lista de seguimiento de otro usuario"
 }
