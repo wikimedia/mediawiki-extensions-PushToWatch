@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Andriykopanytsia"
+			"Andriykopanytsia",
+			"Piramidion"
 		]
 	},
-	"pushtowatch-desc": "Дозволяє висунути сторінку до списку спостереження іншого користувача"
+	"pushtowatch-desc": "Дозволяє протиснути сторінку до списку спостереження іншого користувача"
 }
