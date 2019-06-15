@@ -65,7 +65,7 @@ Class PushToWatch {
   private static function getUsers($title){
 
     try {
-      $dbr = wfGetDB( DB_SLAVE );
+      $dbr = wfGetDB( DB_REPLICA );
 
       $where = array(
         'wl_title' => $title->getUserCaseDBKey(),
