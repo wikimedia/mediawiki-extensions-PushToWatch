@@ -68,7 +68,7 @@ Class PushToWatch {
       $dbr = wfGetDB( DB_REPLICA );
 
       $where = array(
-        'wl_title' => $title->getUserCaseDBKey(),
+        'wl_title' => $title->getDBkey(),
       );
 
       $join = array(
