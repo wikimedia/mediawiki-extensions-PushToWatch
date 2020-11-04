@@ -15,10 +15,10 @@
 		]
 	},
 	"AutoloadClasses": {
-		"PushToWatch": "PushToWatch.class.php"
+		"PushToWatch": "src/PushToWatch.php"
 	},
 	"Hooks": {
-		"SkinTemplateOutputPageBeforeExec": [ "PushToWatch::ListUsers" ]
+		"SkinTemplateOutputPageBeforeExec": [ "PushToWatch::listUsers" ]
 	},
 	"manifest_version": 2
 }

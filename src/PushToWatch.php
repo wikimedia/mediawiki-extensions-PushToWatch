@@ -1,16 +1,21 @@
 <?php
 
 class PushToWatch {
+
+	/**
+	 * @param Title $title
+	 * @param User $user
+	 */
 	private static function addtoWatch( $title, $user ) {
 		global $wgNoReplyAddress, $wgUser;
 
 		$user = User::newFromName( $user );
 			if ( !is_object( $user ) || $user->getID() == 0 ) {
-			throw new Exception( "Invalid user lookup" );
+				throw new Exception( "Invalid user lookup" );
 			}
 
 		if ( $user->isWatched( $title ) ) {
-		return;
+			return;
 		}
 
 		$res = $user->addWatch( $title );
@@ -33,6 +38,10 @@ class PushToWatch {
 		UserMailer::send( [ $to, $from ], $from, $subject, $body, [ 'replyTo' => $replyto ] );
 	}
 
+	/**
+	 * @param Title $title
+	 * @return string
+	 */
 	private static function getUsers( $title ) {
 		try {
 			$dbr = wfGetDB( DB_REPLICA );
@@ -74,7 +83,12 @@ class PushToWatch {
 		}
 	}
 
-	public static function ListUsers( $sk, &$tpl ) {
+	/**
+	 * @param SkinTemplate $sk
+	 * @param QuickTemplate &$tpl
+	 * @return bool
+	 */
+	public static function listUsers( $sk, &$tpl ) {
 		$title = $sk->getRelevantTitle();
 		$output = "<hr/>";
 
