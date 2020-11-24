@@ -57,7 +57,7 @@ class PushToWatch {
 			];
 
 			$join_conds = [
-				'watchlist' => [ 'JOIN', 'user.user_id = watchlist.wl_user' ],
+				'watchlist' => [ 'JOIN', 'user_id = wl_user' ],
 			];
 
 			$res = $dbr->select( $tables, 'DISTINCT user_name', $where, __METHOD__, [], $join_conds );
