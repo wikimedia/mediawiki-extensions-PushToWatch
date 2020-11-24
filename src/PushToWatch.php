@@ -48,6 +48,8 @@ class PushToWatch {
 	 * @return string
 	 */
 	private static function getUsers( $title ) {
+		$output = '';
+
 		try {
 			$dbr = wfGetDB( DB_REPLICA );
 
