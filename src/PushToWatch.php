@@ -24,6 +24,10 @@ class PushToWatch {
 
 		$user->addWatch( $title );
 
+		if ( !$user->isEmailConfirmed() ) {
+			return;
+		}
+
 		$to = new MailAddress( $user->getEmail(), $user->getName(), $user->getRealName() );
 		$from = new MailAddress( $wgUser->getEmail(), $wgUser->getName(), $wgUser->getRealName() );
 		$replyTo = new MailAddress( $wgNoReplyAddress );
