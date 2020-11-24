@@ -4,5 +4,11 @@
 			"cloudyks"
 		]
 	},
-	"pushtowatch-desc": "Allows to push a page to another user's watchlist"
+	"pushtowatch-desc": "Allows to push a page to another user's watchlist",
+	"pushtowatch": "Push to watch:",
+	"pushtowatch-email-body": "Hi $1,\n\n$2 requested you to watch $3\n\nCongratulations!\n\nThanks,\n\nThe {{SITENAME}} team",
+	"pushtowatch-email-subject": "Watchlist injection - $1",
+	"pushtowatch-error": "Could not add '''$1''' to watchlist",
+	"pushtowatch-followers": "Followers: $1",
+	"pushtowatch-no-followers": "No followers"
 }

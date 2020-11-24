@@ -3,15 +3,19 @@
 class PushToWatch {
 
 	/**
-	 * @param Title $title
-	 * @param string $user
+	 * Send an email to the supplied user that a page was pushed to their
+	 * watchlist.
+	 *
+	 * @param Title $title Title object representing the page that was pushed to
+	 *  the target's watchlist
+	 * @param User $user The User to whose watchlist a page was pushed
 	 */
-	private static function addtoWatch( $title, $user ) {
+	private static function addToWatch( $title, $user ) {
 		global $wgNoReplyAddress, $wgUser;
 
 		$user = User::newFromName( $user );
-		if ( !is_object( $user ) || $user->getID() == 0 ) {
-			throw new Exception( "Invalid user lookup" );
+		if ( !is_object( $user ) || $user->getId() == 0 ) {
+			throw new Exception( 'Invalid user lookup' );
 		}
 
 		if ( $user->isWatched( $title ) ) {
@@ -22,17 +26,17 @@ class PushToWatch {
 
 		$to = new MailAddress( $user->getEmail(), $user->getName(), $user->getRealName() );
 		$from = new MailAddress( $wgUser->getEmail(), $wgUser->getName(), $wgUser->getRealName() );
-		$replyto = new MailAddress( $wgNoReplyAddress );
+		$replyTo = new MailAddress( $wgNoReplyAddress );
 
-		$pageurl = $title->getFullUrl();
+		$pageURL = $title->getFullURL();
 
 		$username = $user->getRealName();
 		$currentUser = $wgUser->getRealName();
 
-		$body = "Hi $username,\r\n$currentUser requested you to watch $pageurl\r\nCongrats !";
-		$subject = "Watchlist injection - $title";
+		$body = wfMessage( 'pushtowatch-email-body', $username, $currentUser, $pageURL )->escaped();
+		$subject = wfMessage( 'pushtowatch-email-subject', $title )->escaped();
 
-		UserMailer::send( [ $to, $from ], $from, $subject, $body, [ 'replyTo' => $replyto ] );
+		UserMailer::send( [ $to, $from ], $from, $subject, $body, [ 'replyTo' => $replyTo ] );
 	}
 
 	/**
@@ -47,7 +51,7 @@ class PushToWatch {
 				'wl_title' => $title->getDBkey(),
 			];
 
-			$join = [
+			$tables = [
 				'user',
 				'watchlist'
 			];
@@ -56,26 +60,36 @@ class PushToWatch {
 				'watchlist' => [ 'JOIN', 'user.user_id = watchlist.wl_user' ],
 			];
 
-			$res = $dbr->select( $join, 'DISTINCT user_real_name', $where, null, [], $join_conds );
+			$res = $dbr->select( $tables, 'DISTINCT user_name', $where, __METHOD__, [], $join_conds );
 
-			$output = "No follower";
+			$output = wfMessage( 'pushtowatch-no-followers' )->escaped();
 
 			if ( $res->numRows() ) {
 				$users = [];
-				foreach ( $res as $row ) {
-					$users[] = $row->user_real_name;
 
-					$output = 'Followers : ' . implode( ', ', $users ) . '.';
+				foreach ( $res as $row ) {
+					$users[] = $row->user_name;
 				}
 
-				$output .= Html::rawElement( 'form', [ 'method' => 'POST' ],
-					'Push to watch : ' .
+				if ( !empty( $users ) ) {
+					// @todo FIXME: Use Language#commaList, probably
+					// @todo FIXME: Also would be nice to have the user names be links that
+					// point to the users' User: pages...
+					$output = wfMessage( 'pushtowatch-followers', implode( ', ', $users ) )->escaped();
+				}
+
+				$output .= Html::rawElement( 'form', [ 'method' => 'post' ],
+					wfMessage( 'pushtowatch' )->escaped() .
+					wfMessage( 'word-separator' )->parse() .
 					Html::submitButton( '', [ 'style' => 'display:none' ] ) .
+					// @todo FIXME: give this element class="mw-autocomplete-user" and add the
+					// 'mediawiki.userSuggest' ResourceLoader module to output to enable
+					// autocompletion...but it's kinda heavy to add that module to all page loads
 					Html::input( 'pushtowatch_user' )
 				);
 			}
 		} catch ( Exception $e ) {
-			error_log( 'Wiki, follower error :' . $e->getMessage() );
+			wfDebugLog( 'PushToWatch', 'Wiki, follower error: ' . $e->getMessage() );
 		}
 
 		return $output;
@@ -100,11 +114,10 @@ class PushToWatch {
 			// FIXME: This destroys all usernames that contain other characters!
 			$user = preg_replace( "#[^a-z]#i", '', $user );
 			if ( $user ) {
-				self::addtoWatch( $title, $user );
+				self::addToWatch( $title, $user );
 			}
 		} catch ( Exception $e ) {
-			// @todo FIXME: i18n
-			$output .= Html::errorBox( "Could not add <b>$user</b> to watchlist" );
+			$output .= Html::errorBox( $skin->msg( 'pushtowatch-error', $user )->parse() );
 		}
 
 		$output .= self::getUsers( $title );

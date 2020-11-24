@@ -6,5 +6,11 @@
 			"Umherirrender"
 		]
 	},
-	"pushtowatch-desc": "{{desc|name=Push To Watch|url=https://www.mediawiki.org/wiki/Extension:PushToWatch}}"
+	"pushtowatch-desc": "{{desc|name=Push To Watch|url=https://www.mediawiki.org/wiki/Extension:PushToWatch}}",
+	"pushtowatch": "Shown on the page footer, followed by an <code>&lt;input&gt;</code> element where you can enter the target user's user name to add a page to their watchlist",
+	"pushtowatch-email-body": "The body of the email message that PushToWatch sends to both the target user (the user to whose watchlist a page was pushed) and the person who pushed the page. The email subject message is {{msg-mw|pushtowatch-email-subject}}.\nParameters:\n* $1 - target user's user name\n* $2 - user name of the person who pushed the page to another user's watchlist\n* $3 - full URL to the page that was pushed to the target's watchlist",
+	"pushtowatch-email-subject": "Title of the email that PushToWatch sends to both the target user (the user to whose watchlist a page was pushed) and the person who pushed the page. The email body message is {{msg-mw|pushtowatch-email-body}}.\nParameters:\n* $1 - title of the page that was pushed to the target user's watchlist",
+	"pushtowatch-error": "Error message shown when the page could not be pushed to the given user's watchlist for whatever reason.\nParameters:\n* $1 - the user name of the target user",
+	"pushtowatch-followers": "Shown on the page footer of a page.\nParameters:\n* $1 - comma-separated list of users who have the current page on their watchlist",
+	"pushtowatch-no-followers": "Shown on the page footer of a page when no-one on the wiki has the page on their watchlist"
 }
