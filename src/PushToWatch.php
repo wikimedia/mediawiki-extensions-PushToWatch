@@ -82,27 +82,34 @@ class PushToWatch {
 	}
 
 	/**
-	 * @param SkinTemplate $sk
-	 * @param QuickTemplate $tpl
+	 * @param Skin $sk
+	 * @param string $key The current key for the current group (row) of footer links. Currently either info or places
+	 * @param array &$footerLinks The array of links that can be changed.
+	 *    Keys will be used for generating the ID of the footer item; values should be HTML strings.
 	 */
-	public static function listUsers( $sk, $tpl ) {
+	public static function onSkinAddFooterLinks( Skin $sk, string $key, array &$footerLinks ) {
+		if ( $key !== 'info' ) {
+			return;
+		}
+
 		$title = $sk->getRelevantTitle();
-		$output = "<hr/>";
+		$output = '<hr />';
 
 		try {
 			$user = $sk->getRequest()->getText( 'pushtowatch_user' );
 			// FIXME: This destroys all usernames that contain other characters!
-			$user = preg_replace( "#[^a-z]#i", "", $user );
+			$user = preg_replace( "#[^a-z]#i", '', $user );
 			if ( $user ) {
 				self::addtoWatch( $title, $user );
 			}
 		} catch ( Exception $e ) {
-			$output .= "<div class='error'>Could not add <b>$user</b> to watchlist</div>";
+			// @todo FIXME: i18n
+			$output .= Html::errorBox( "Could not add <b>$user</b> to watchlist" );
 		}
 
 		$output .= self::getUsers( $title );
 
-		$tpl->set( 'followerList',  $output );
-		$tpl->data['footerlinks']['info'][] = 'followerList';
+		$footerLinks['followerList'] = $output;
 	}
+
 }

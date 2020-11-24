@@ -1,13 +1,13 @@
 {
 	"name": "PushToWatch",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"author": "cloudyks",
 	"url": "https://www.mediawiki.org/wiki/Extension:PushToWatch",
 	"descriptionmsg": "pushtowatch-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.32.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"MessagesDirs": {
 		"PushToWatch": [
@@ -18,7 +18,7 @@
 		"PushToWatch": "src/PushToWatch.php"
 	},
 	"Hooks": {
-		"SkinTemplateOutputPageBeforeExec": [ "PushToWatch::listUsers" ]
+		"SkinAddFooterLinks": "PushToWatch::onSkinAddFooterLinks"
 	},
 	"manifest_version": 2
 }
