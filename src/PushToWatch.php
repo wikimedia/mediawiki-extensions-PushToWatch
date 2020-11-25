@@ -10,7 +10,7 @@ class PushToWatch {
 	 *  the target's watchlist
 	 * @param User $user The User to whose watchlist a page was pushed
 	 */
-	private static function addToWatch( $title, $user ) {
+	private static function addToWatch( $title, User $user ) {
 		global $wgNoReplyAddress, $wgUser;
 
 		if ( !is_object( $user ) || $user->getId() == 0 ) {
