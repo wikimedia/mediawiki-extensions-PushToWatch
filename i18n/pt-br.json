@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eduardo Addad de Oliveira",
 			"TheGabrielZaum"
 		]
 	},
-	"pushtowatch-desc": "Permite empurrar uma página à lista de vigiados de outro usuário"
+	"pushtowatch-desc": "Permite empurrar uma página à lista de vigiados de outro usuário",
+	"pushtowatch": "Atualizar para vigiar:",
+	"pushtowatch-email-subject": "Injeção de lista de páginas vigiadas  - $1",
+	"pushtowatch-error": "Não foi possível adicionar '''$1''' à lista de páginas vigiadas",
+	"pushtowatch-followers": "Seguidores: $1",
+	"pushtowatch-no-followers": "Sem seguidores"
 }
