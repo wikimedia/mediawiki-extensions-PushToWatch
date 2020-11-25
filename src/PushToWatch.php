@@ -13,7 +13,6 @@ class PushToWatch {
 	private static function addToWatch( $title, $user ) {
 		global $wgNoReplyAddress, $wgUser;
 
-		$user = User::newFromName( $user );
 		if ( !is_object( $user ) || $user->getId() == 0 ) {
 			throw new Exception( 'Invalid user lookup' );
 		}
@@ -120,9 +119,7 @@ class PushToWatch {
 
 		try {
 			if ( $request->wasPosted() && $isTokenOK ) {
-				$user = $sk->getRequest()->getText( 'pushtowatch_user' );
-				// FIXME: This destroys all usernames that contain other characters!
-				$user = preg_replace( "#[^a-z]#i", '', $user );
+				$user = User::newFromName( $sk->getRequest()->getText( 'pushtowatch_user' ) );
 				if ( $user ) {
 					self::addToWatch( $title, $user );
 				}
