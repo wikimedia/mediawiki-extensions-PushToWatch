@@ -123,7 +123,7 @@ class PushToWatch {
 				self::addToWatch( $title, $user );
 			}
 		} catch ( Exception $e ) {
-			$output .= Html::errorBox( $skin->msg( 'pushtowatch-error', $user )->parse() );
+			$output .= Html::errorBox( $sk->msg( 'pushtowatch-error', $user )->parse() );
 		}
 
 		$output .= self::getUsers( $title );
