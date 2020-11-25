@@ -87,6 +87,7 @@ class PushToWatch {
 				$output .= Html::rawElement( 'form', [ 'method' => 'post' ],
 					wfMessage( 'pushtowatch' )->escaped() .
 					wfMessage( 'word-separator' )->escaped() .
+					Html::hidden( 'wpPushToWatchToken', RequestContext::getMain()->getUser()->getEditToken() ) .
 					Html::submitButton( '', [ 'style' => 'display:none' ] ) .
 					// @todo FIXME: give this element class="mw-autocomplete-user" and add the
 					// 'mediawiki.userSuggest' ResourceLoader module to output to enable
@@ -113,14 +114,21 @@ class PushToWatch {
 		}
 
 		$title = $sk->getRelevantTitle();
+		$request = $sk->getRequest();
 		$output = '<hr />';
+		$isTokenOK = $sk->getUser()->matchEditToken( $request->getVal( 'wpPushToWatchToken' ) );
 
 		try {
-			$user = $sk->getRequest()->getText( 'pushtowatch_user' );
-			// FIXME: This destroys all usernames that contain other characters!
-			$user = preg_replace( "#[^a-z]#i", '', $user );
-			if ( $user ) {
-				self::addToWatch( $title, $user );
+			if ( $request->wasPosted() && $isTokenOK ) {
+				$user = $sk->getRequest()->getText( 'pushtowatch_user' );
+				// FIXME: This destroys all usernames that contain other characters!
+				$user = preg_replace( "#[^a-z]#i", '', $user );
+				if ( $user ) {
+					self::addToWatch( $title, $user );
+				}
+			} elseif ( $request->wasPosted() && !$isTokenOK ) {
+				// CSRF attempt or something...
+				$output .= Html::errorBox( $sk->msg( 'sessionfailure' )->parse() );
 			}
 		} catch ( Exception $e ) {
 			$output .= Html::errorBox( $sk->msg( 'pushtowatch-error', $user )->parse() );
