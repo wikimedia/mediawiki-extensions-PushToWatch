@@ -112,8 +112,13 @@ class PushToWatch {
 			return;
 		}
 
-		$title = $sk->getRelevantTitle();
 		$request = $sk->getRequest();
+		// Don't render the form for non-view actions
+		if ( $request->getVal( 'action' ) !== 'view' ) {
+			return;
+		}
+
+		$title = $sk->getRelevantTitle();
 		$output = '<hr />';
 		$isTokenOK = $sk->getUser()->matchEditToken( $request->getVal( 'wpPushToWatchToken' ) );
 
