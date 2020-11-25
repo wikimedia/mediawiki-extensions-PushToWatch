@@ -86,7 +86,7 @@ class PushToWatch {
 
 				$output .= Html::rawElement( 'form', [ 'method' => 'post' ],
 					wfMessage( 'pushtowatch' )->escaped() .
-					wfMessage( 'word-separator' )->parse() .
+					wfMessage( 'word-separator' )->escaped() .
 					Html::submitButton( '', [ 'style' => 'display:none' ] ) .
 					// @todo FIXME: give this element class="mw-autocomplete-user" and add the
 					// 'mediawiki.userSuggest' ResourceLoader module to output to enable
