@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Roovinn"
+		]
+	},
+	"pushtowatch-email-body": "हाय!$1\n\n$2 आपको $3 देखने का अनुरोध किया \n\nबधाई हो!\n\nधन्यवाद, \n\n{{SITENAME}} टीम",
+	"pushtowatch-followers": "अनुयायी: $1",
+	"pushtowatch-no-followers": "कोई अनुयायी नहीं।"
+}

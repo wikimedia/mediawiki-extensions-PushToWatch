@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lokal Profil"
+			"Lokal Profil",
+			"Sabelöga"
 		]
 	},
-	"pushtowatch-desc": "Gör det möjligt att skicka en sida till en annan användares bevakningslista"
+	"pushtowatch-desc": "Gör det möjligt att skicka en sida till en annan användares bevakningslista",
+	"pushtowatch-email-body": "Hej $1,\n\n$2 bad dig att bevaka $3\n\nGratulerar!\n\nTack,\n\n{{SITENAME}}-teamet",
+	"pushtowatch-error": "Kunde inte lägga till '''$1''' i bevakningslistan",
+	"pushtowatch-followers": "Följare: $1",
+	"pushtowatch-no-followers": "Inga följare"
 }

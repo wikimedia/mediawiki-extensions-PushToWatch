@@ -4,5 +4,11 @@
 			"Gomoko"
 		]
 	},
-	"pushtowatch-desc": "Permet de pousser une page dans la liste de suivi d’un autre utilisateur"
+	"pushtowatch-desc": "Permet de pousser une page dans la liste de suivi d’un autre utilisateur",
+	"pushtowatch": "Pousser pour surveiller :",
+	"pushtowatch-email-body": "Bonjour $1,\n\n$2 vous a demandé de surveiller $3\n\nFélicitations !\n\nMerci,\n\nL’équipe {{SITENAME}}",
+	"pushtowatch-email-subject": "Injection de la liste de suivi - $1",
+	"pushtowatch-error": "Impossible d’ajouter '''$1''' à la liste de suivi",
+	"pushtowatch-followers": "Suiveurs : $1",
+	"pushtowatch-no-followers": "Aucun suiveur"
 }
