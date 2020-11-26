@@ -10,5 +10,7 @@
 	"pushtowatch-email-subject": "Watchlist injection - $1",
 	"pushtowatch-error": "Could not add '''$1''' to watchlist",
 	"pushtowatch-followers": "Followers: $1",
-	"pushtowatch-no-followers": "No followers"
+	"pushtowatch-no-followers": "No followers",
+	"action-pushtowatch": "",
+	"right-pushtowatch": "Push pages to other users' watchlist without the consent of the user in question"
 }
