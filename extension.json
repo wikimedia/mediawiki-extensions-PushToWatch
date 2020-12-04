@@ -20,5 +20,13 @@
 	"Hooks": {
 		"SkinAddFooterLinks": "PushToWatch::onSkinAddFooterLinks"
 	},
+	"AvailableRights": [
+		"pushtowatch"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"pushtowatch": true
+		}
+	},
 	"manifest_version": 2
 }

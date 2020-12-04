@@ -118,9 +118,14 @@ class PushToWatch {
 			return;
 		}
 
+		$performingUser = $sk->getUser();
+		if ( !$performingUser->isAllowed( 'pushtowatch' ) ) {
+			return;
+		}
+
 		$title = $sk->getRelevantTitle();
 		$output = '<hr />';
-		$isTokenOK = $sk->getUser()->matchEditToken( $request->getVal( 'wpPushToWatchToken' ) );
+		$isTokenOK = $performingUser->matchEditToken( $request->getVal( 'wpPushToWatchToken' ) );
 
 		try {
 			if ( $request->wasPosted() && $isTokenOK ) {
