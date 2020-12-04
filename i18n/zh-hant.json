@@ -5,5 +5,11 @@
 			"LNDDYL"
 		]
 	},
-	"pushtowatch-desc": "允許推送頁面至另一個使用者的監視清單"
+	"pushtowatch-desc": "允許推送頁面至另一個使用者的監視清單",
+	"pushtowatch": "推送來監視：",
+	"pushtowatch-email-body": "嗨$1：\n\n$2邀請您觀看$3\n\n太棒了！\n\n{{SITENAME}}團隊感謝您",
+	"pushtowatch-email-subject": "監視清單注入 - $1",
+	"pushtowatch-error": "無法添加'''$1'''到監視清單",
+	"pushtowatch-followers": "關注者：$1",
+	"pushtowatch-no-followers": "沒有關注者"
 }
