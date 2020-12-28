@@ -12,6 +12,5 @@
 	"pushtowatch-email-subject": "Injection de la liste de suivi - $1",
 	"pushtowatch-error": "Impossible d’ajouter '''$1''' à la liste de suivi",
 	"pushtowatch-followers": "Suiveurs : $1",
-	"pushtowatch-no-followers": "Aucun suiveur",
-	"action-pushtowatch": "<!---->"
+	"pushtowatch-no-followers": "Aucun suiveur"
 }

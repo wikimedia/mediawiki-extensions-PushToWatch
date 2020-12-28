@@ -11,6 +11,5 @@
 	"pushtowatch-email-subject": "İzleme listesi enjeksiyonu - $1",
 	"pushtowatch-error": "İzleme listesine '''$1''' eklenemedi",
 	"pushtowatch-followers": "İzleyiciler: $1",
-	"pushtowatch-no-followers": "İzleyici yok",
-	"action-pushtowatch": "<!---->"
+	"pushtowatch-no-followers": "İzleyici yok"
 }
