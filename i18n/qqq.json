@@ -13,6 +13,6 @@
 	"pushtowatch-error": "Error message shown when the page could not be pushed to the given user's watchlist for whatever reason.\nParameters:\n* $1 - the user name of the target user",
 	"pushtowatch-followers": "Shown on the page footer of a page.\nParameters:\n* $1 - comma-separated list of users who have the current page on their watchlist",
 	"pushtowatch-no-followers": "Shown on the page footer of a page when no-one on the wiki has the page on their watchlist",
-	"action-pushtowatch": "{{ignored}} This message only exists to keep Continuous Integration (CI) on WMF git/gerrit architecture happy. No part of the PHP codebase refers to it and thus it is never shown anywhere.",
+	"action-pushtowatch": "{{ignored}}\nThis message only exists to keep Continuous Integration (CI) on WMF git/gerrit architecture happy. No part of the PHP codebase refers to it and thus it is never shown anywhere.\n\n{{doc-action}}",
 	"right-pushtowatch": "{{doc-right|pushtowatch}}"
 }
