@@ -10,5 +10,6 @@
 	"pushtowatch-email-subject": "Injeção de lista de páginas vigiadas  - $1",
 	"pushtowatch-error": "Não foi possível adicionar '''$1''' à lista de páginas vigiadas",
 	"pushtowatch-followers": "Seguidores: $1",
-	"pushtowatch-no-followers": "Sem seguidores"
+	"pushtowatch-no-followers": "Sem seguidores",
+	"right-pushtowatch": "Enviar páginas para a lista de páginas vigiadas de outros usuários sem o consentimento do usuário em questão"
 }
