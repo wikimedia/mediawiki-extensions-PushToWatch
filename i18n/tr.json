@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Joseph",
 			"MuratTheTurkish"
 		]
 	},
@@ -11,5 +12,6 @@
 	"pushtowatch-email-subject": "İzleme listesi enjeksiyonu - $1",
 	"pushtowatch-error": "İzleme listesine '''$1''' eklenemedi",
 	"pushtowatch-followers": "İzleyiciler: $1",
-	"pushtowatch-no-followers": "İzleyici yok"
+	"pushtowatch-no-followers": "İzleyici yok",
+	"right-pushtowatch": "Diğer kullanıcıların izleme listelerine sözkonusu kullanıcının rızası olmadan sayfa gönderin"
 }
