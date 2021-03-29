@@ -6,5 +6,10 @@
 	},
 	"pushtowatch-desc": "Permette de mannà 'na pàgene a 'n'otre elenghe de pàggene condrollate da 'n'otre utende",
 	"pushtowatch": "cazze pe 'ndrucà:",
-	"pushtowatch-email-body": "Cià $1,\n\n$2 è cercate de 'ndrucà $3\n\nComblemende!\n\nGrazie,\n\n'A squadre de {{SITENAME}}"
+	"pushtowatch-email-body": "Cià $1,\n\n$2 è cercate de 'ndrucà $3\n\nComblemende!\n\nGrazie,\n\n'A squadre de {{SITENAME}}",
+	"pushtowatch-email-subject": "Injection de l'elenghe de le pàggene condrollate - $1",
+	"pushtowatch-error": "'Mbossibbele aggiungere '''$1''' a l'elenghe de le pàggene condrollate",
+	"pushtowatch-followers": "Seguace: $1",
+	"pushtowatch-no-followers": "Nisciune seguace",
+	"right-pushtowatch": "Manne le pàggene a otre elenghe de pàggene condrollate de le utinde senze 'u consenze de l'utende in questione"
 }
