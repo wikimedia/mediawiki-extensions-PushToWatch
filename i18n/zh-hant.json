@@ -11,5 +11,6 @@
 	"pushtowatch-email-subject": "監視清單注入 - $1",
 	"pushtowatch-error": "無法添加'''$1'''到監視清單",
 	"pushtowatch-followers": "關注者：$1",
-	"pushtowatch-no-followers": "沒有關注者"
+	"pushtowatch-no-followers": "沒有關注者",
+	"right-pushtowatch": "不經相關使用者同意，將頁面推送到其他使用者的監視清單"
 }
