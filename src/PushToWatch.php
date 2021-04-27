@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class PushToWatch {
 
 	/**
@@ -17,11 +19,13 @@ class PushToWatch {
 			throw new Exception( 'Invalid user lookup' );
 		}
 
-		if ( $user->isWatched( $title ) ) {
+		$watchlistManager = MediaWikiServices::getInstance()->getWatchlistManager();
+
+		if ( $watchlistManager->isWatched( $user, $title ) ) {
 			return;
 		}
 
-		$user->addWatch( $title );
+		$watchlistManager->addWatch( $user,  $title );
 
 		if ( !$user->isEmailConfirmed() ) {
 			return;
