@@ -13,6 +13,7 @@ class PushToWatch {
 	 * @param User $user The User to whose watchlist a page was pushed
 	 */
 	private static function addToWatch( $title, User $user ) {
+		// phpcs:ignore MediaWiki.Usage.DeprecatedGlobalVariables.Deprecated$wgUser
 		global $wgNoReplyAddress, $wgUser;
 
 		if ( !is_object( $user ) || $user->getId() == 0 ) {
