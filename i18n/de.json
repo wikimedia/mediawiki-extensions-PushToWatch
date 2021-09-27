@@ -6,5 +6,6 @@
 		]
 	},
 	"pushtowatch-desc": "Ermöglicht den Transfer einer Seite auf die Beobachtungsliste eines anderen Benutzers.",
+	"pushtowatch-followers": "Follower: $1",
 	"pushtowatch-no-followers": "Keine Follower"
 }
