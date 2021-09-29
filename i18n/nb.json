@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abuluntu",
 			"Jon Harald Søby"
 		]
 	},
-	"pushtowatch-desc": "Gjør det mulig å legge til en side på en annen brukers overvåkningsliste"
+	"pushtowatch-desc": "Gjør det mulig å legge til en side på en annen brukers overvåkningsliste",
+	"pushtowatch-email-subject": "$1 ble lagt til din overvåkningsliste",
+	"pushtowatch-error": "Kunne ikke legge til '''$1''' i overvåkningslisten",
+	"right-pushtowatch": "Sende sider til andre brukeres overvåkningsliste uten brukerens samtykke"
 }
