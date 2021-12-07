@@ -2,8 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
-			"Piramidion"
+			"Piramidion",
+			"DDPAT"
 		]
 	},
-	"pushtowatch-desc": "Дозволяє протиснути сторінку до списку спостереження іншого користувача"
+	"pushtowatch-desc": "Дозволяє протиснути сторінку до списку спостереження іншого користувача",
+	"pushtowatch": "Натисніть, щоб подивитися:",
+	"pushtowatch-email-body": "Привіт $1,\n\n$2 попросила вас подивитися $3\n\nВітаю!\n\nДякую,\n\nКоманда {{SITENAME}}",
+	"pushtowatch-email-subject": "Ін'єкція списку спостереження - $1",
+	"pushtowatch-error": "Не вдалося додати '''$1''' до списку перегляду",
+	"pushtowatch-followers": "Глядачі: $1",
+	"pushtowatch-no-followers": "Немає послідовників",
+	"right-pushtowatch": "Пересилайте сторінки до списку спостереження інших користувачів без згоди відповідного користувача"
 }
