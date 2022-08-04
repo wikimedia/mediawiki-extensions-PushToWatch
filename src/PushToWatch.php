@@ -13,8 +13,7 @@ class PushToWatch {
 	 * @param User $user The User to whose watchlist a page was pushed
 	 */
 	private static function addToWatch( $title, User $user ) {
-		// phpcs:ignore MediaWiki.Usage.DeprecatedGlobalVariables.Deprecated$wgUser
-		global $wgNoReplyAddress, $wgUser;
+		global $wgNoReplyAddress;
 
 		if ( !is_object( $user ) || $user->getId() == 0 ) {
 			throw new Exception( 'Invalid user lookup' );
@@ -32,14 +31,15 @@ class PushToWatch {
 			return;
 		}
 
+		$contextUser = RequestContext::getMain()->getUser();
 		$to = new MailAddress( $user->getEmail(), $user->getName(), $user->getRealName() );
-		$from = new MailAddress( $wgUser->getEmail(), $wgUser->getName(), $wgUser->getRealName() );
+		$from = new MailAddress( $contextUser->getEmail(), $contextUser->getName(), $contextUser->getRealName() );
 		$replyTo = new MailAddress( $wgNoReplyAddress );
 
 		$pageURL = $title->getFullURL();
 
 		$username = $user->getRealName();
-		$currentUser = $wgUser->getRealName();
+		$currentUser = $contextUser->getRealName();
 
 		$body = wfMessage( 'pushtowatch-email-body', $username, $currentUser, $pageURL )->escaped();
 		$subject = wfMessage( 'pushtowatch-email-subject', $title )->escaped();
