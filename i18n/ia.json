@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"pushtowatch-desc": "Permitte pulsar un pagina verso le observatorio de un altere usator",
+	"pushtowatch": "Pulsar pro observar:",
+	"pushtowatch-email-body": "Salute $1,\n\n$2 ha requestate que tu observa $3\n\nFelicitationes!\n\nGratias,\n\nLe equipa de {{SITENAME}}",
+	"pushtowatch-email-subject": "Injection in observatorio - $1",
+	"pushtowatch-error": "Non poteva adder '''$1''' al observatorio",
+	"pushtowatch-followers": "Observatores: $1",
+	"pushtowatch-no-followers": "Sin observatores",
+	"right-pushtowatch": "Pulsa paginas verso le observatorios de altere usatores sin consentimento del usator in question"
+}
