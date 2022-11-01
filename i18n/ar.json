@@ -5,5 +5,12 @@
 			"ديفيد"
 		]
 	},
-	"pushtowatch-desc": "يسمح بدفع صفحة إلى قائمة مراقبة مستخدم آخر"
+	"pushtowatch-desc": "يسمح بدفع صفحة إلى قائمة مراقبة مستخدم آخر",
+	"pushtowatch": "اضغط للمشاهدة:",
+	"pushtowatch-email-body": "مرحبًا $1 ،! N !! N! طلب منك $2 مشاهدة $3 ! N !! N! تهانينا !! N !! N! شكرًا ،! N !! N! فريق {{SITENAME}}",
+	"pushtowatch-email-subject": "حقن قائمة المراقبة - $1",
+	"pushtowatch-error": "تعذرت إضافة '' ' $1 ' '' إلى قائمة المراقبة",
+	"pushtowatch-followers": "المتابعون: $1",
+	"pushtowatch-no-followers": "لا متابعين",
+	"right-pushtowatch": "ادفع الصفحات إلى قائمة مراقبة المستخدمين الآخرين دون موافقة المستخدم المعني"
 }
