@@ -4,5 +4,12 @@
 			"Hamilton Abreu"
 		]
 	},
-	"pushtowatch-desc": "Permite introduzir uma página na lista de páginas vigiadas de outro utilizador"
+	"pushtowatch-desc": "Permite introduzir uma página na lista de páginas vigiadas de outro utilizador",
+	"pushtowatch": "Introduzir nas páginas vigiadas de:",
+	"pushtowatch-email-body": "Olá $1,\n\n$2 pede-lhe para vigiar a página $3\n\nParabéns!\n\nObrigado,\n\nA equipa da wiki {{SITENAME}}",
+	"pushtowatch-email-subject": "Inserção nas páginas vigiadas - $1",
+	"pushtowatch-error": "Não foi possível adicionar '''$1''' às páginas vigiadas",
+	"pushtowatch-followers": "Seguidores: $1",
+	"pushtowatch-no-followers": "Não há seguidores a vigiar a página",
+	"right-pushtowatch": "Inserir páginas na lista de páginas vigiadas de outros utilizadores sem o consentimento dos mesmos"
 }
