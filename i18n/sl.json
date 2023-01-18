@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"pushtowatch-desc": "Omogoča potisk strani na spisek nadzorov drugega uporabnika",
+	"pushtowatch": "Potisni za opazovanje:",
+	"pushtowatch-email-body": "Pozdravljeni, $1,\n\n$2 vas je prosil za opazovanje strani $3.\n\nČestitamo!\n\nHvala,\n\nEkipa projekta {{SITENAME}}",
+	"pushtowatch-email-subject": "Injekcija spiska nadzorov - $1",
+	"pushtowatch-error": "'''$1''' ni bilo mogoče dodati na spisek nadzorov",
+	"pushtowatch-followers": "Sledilci: $1",
+	"pushtowatch-no-followers": "Ni sledilcev",
+	"right-pushtowatch": "Potiskanje strani na spisek nadzorov drugih uporabnikov brez soglasja zadevnega uporabnika"
+}
