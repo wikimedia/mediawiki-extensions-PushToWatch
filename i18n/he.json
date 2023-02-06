@@ -1,11 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ghsuvr",
 			"Guycn2",
 			"YaronSh"
 		]
 	},
-	"pushtowatch-desc": "מאפשר להכניס דף לרשימת המעקב של משתמש אחר.",
-	"pushtowatch-no-followers": "אין עוקבים"
+	"pushtowatch-desc": "אפשרות לדחוף דף לרשימת המעקב של משתמש אחר.",
+	"pushtowatch": "דחיפה למעקב:",
+	"pushtowatch-email-body": "שלום $1,\n\n$2 {{GENDER:$2|ביקש|ביקשה}} ממך לעקוב אחר $3\n\nברכות!\n\nתודה, צוות {{SITENAME}}",
+	"pushtowatch-email-subject": "הזרקה לרשימת מעקב - $1",
+	"pushtowatch-error": "לא היה אפשר להוסיף את '''$1''' לרשימת המעקב",
+	"pushtowatch-followers": "עוקבים: $1",
+	"pushtowatch-no-followers": "אין עוקבים",
+	"right-pushtowatch": "דחיפת דפים לרשימות מעקב של משתמשים אחרים ללא ההסכמה של המשתמש"
 }
