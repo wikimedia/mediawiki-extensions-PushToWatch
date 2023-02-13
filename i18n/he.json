@@ -2,8 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Ghsuvr",
-			"Guycn2"
+			"Guycn2",
+			"Amire80",
+			"YaronSh"
 		]
 	},
-	"pushtowatch-desc": "מאפשר להכניס דף לרשימת המעקב של משתמש אחר."
+	"pushtowatch-desc": "אפשרות לדחוף דף לרשימת המעקב של משתמש אחר."
 }
