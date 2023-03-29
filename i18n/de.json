@@ -1,11 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Justman10000",
 			"Metalhead64",
 			"Umlaut"
 		]
 	},
 	"pushtowatch-desc": "Ermöglicht den Transfer einer Seite auf die Beobachtungsliste eines anderen Benutzers.",
+	"pushtowatch": "Push zum Ansehen:",
+	"pushtowatch-email-body": "Hallo $1,\n\n$2 hat dich gebeten, $3 zu beobachten\n\nHerzlichen Glückwunsch!\n\nDanke!\n\nDas {{SITENAME}}-Team",
+	"pushtowatch-email-subject": "Watchlist-Injektion - $1",
+	"pushtowatch-error": "Konnte '''$1''' nicht zur Beobachtungsliste hinzufügen",
 	"pushtowatch-followers": "Follower: $1",
-	"pushtowatch-no-followers": "Keine Follower"
+	"pushtowatch-no-followers": "Keine Follower",
+	"right-pushtowatch": "Pushen von Seiten auf die Beobachtungsliste anderer Nutzer ohne die Zustimmung des betreffenden Nutzers"
 }
