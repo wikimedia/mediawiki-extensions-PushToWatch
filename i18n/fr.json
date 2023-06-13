@@ -7,11 +7,11 @@
 		]
 	},
 	"pushtowatch-desc": "Permet de pousser une page dans la liste de suivi d’un autre utilisateur",
-	"pushtowatch": "Suggérer pour la liste de suivi :",
-	"pushtowatch-email-body": "Bonjour $1,\n\n$2 vous a demandé de surveiller $3\n\nFélicitations !\n\nMerci,\n\nL’équipe de {{SITENAME}}",
-	"pushtowatch-email-subject": "Injection de la liste de suivi - $1",
+	"pushtowatch": "Pousser vers la liste de suivi de :",
+	"pushtowatch-email-body": "Bonjour $1,\n\n$2 vous a demandé de suivre $3\n\nFélicitations !\n\nMerci,\n\nL’équipe de {{SITENAME}}",
+	"pushtowatch-email-subject": "Injection en liste de suivi — $1",
 	"pushtowatch-error": "Impossible d’ajouter '''$1''' à la liste de suivi",
-	"pushtowatch-followers": "Suiveurs : $1",
+	"pushtowatch-followers": "Suiveurs : $1",
 	"pushtowatch-no-followers": "Aucun suiveur",
-	"right-pushtowatch": "Pousser les pages vers la liste de suivi des autres utilisateurs sans le consentement de l’utilisateur en question"
+	"right-pushtowatch": "Pousser des pages vers la liste de suivi d’autres utilisateurs sans le consentement des utilisateurs en question"
 }
