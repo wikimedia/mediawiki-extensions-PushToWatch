@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"pushtowatch-email-body": "Sveiki, $1,\n\n$2 paprašė jūsų stebėti $3\n\nSveikiname!\n\nAčiū,\n\n{{SITENAME}} komanda",
+	"pushtowatch-email-subject": "Stebėjimo sąrašo injekcija – $1",
+	"pushtowatch-error": "Nepavyko pridėti '''$1''' į stebėjimo sąrašą",
+	"pushtowatch-followers": "Sekėjai: $1",
+	"pushtowatch-no-followers": "Nėra sekėjų"
+}
