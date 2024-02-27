@@ -6,7 +6,11 @@
 		]
 	},
 	"pushtowatch-desc": "Gjør det mulig å legge til en side på en annen brukers overvåkningsliste",
+	"pushtowatch": "Be om å overvåke:",
+	"pushtowatch-email-body": "Hei, $1.\n\n$2 ba om at du skal overvåke $3\n\nGratulerer!\n\nTakk,\n{{SITENAME}}-teamet",
 	"pushtowatch-email-subject": "$1 ble lagt til din overvåkningsliste",
 	"pushtowatch-error": "Kunne ikke legge til '''$1''' i overvåkningslisten",
+	"pushtowatch-followers": "Følgere: $1",
+	"pushtowatch-no-followers": "Ingen følgere",
 	"right-pushtowatch": "Sende sider til andre brukeres overvåkningsliste uten brukerens samtykke"
 }
