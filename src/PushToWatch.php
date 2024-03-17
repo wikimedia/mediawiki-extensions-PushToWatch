@@ -25,7 +25,7 @@ class PushToWatch {
 			return;
 		}
 
-		$watchlistManager->addWatch( $user,  $title );
+		$watchlistManager->addWatch( $user, $title );
 
 		if ( !$user->isEmailConfirmed() ) {
 			return;
