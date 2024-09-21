@@ -55,7 +55,7 @@ class PushToWatch {
 		$output = '';
 
 		try {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 			$where = [
 				'wl_title' => $title->getDBkey(),
