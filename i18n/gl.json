@@ -5,5 +5,12 @@
 			"Toliño"
 		]
 	},
-	"pushtowatch-desc": "Permite forzar a inclusión dunha páxina na lista de vixilancia doutro usuario"
+	"pushtowatch-desc": "Permite forzar a inclusión dunha páxina na lista de vixilancia doutro usuario",
+	"pushtowatch": "Forzar a inclusión na lista de vixilancia de:",
+	"pushtowatch-email-body": "Ola, $1:\n\n$2 solicitouche vixiar $3\n\nParabéns!\n\nGrazas.\n\nO equipo de {{SITENAME}}",
+	"pushtowatch-email-subject": "Inxección na lista de vixilancia: $1",
+	"pushtowatch-error": "Non se puido engadir «'''$1'''» á lista de vixilancia",
+	"pushtowatch-followers": "Seguidores: $1",
+	"pushtowatch-no-followers": "Sen seguidores",
+	"right-pushtowatch": "Forzar a inclusión de páxinas na lista de vixilancia doutros usuarios sen o consentimento do usuario en cuestión"
 }
