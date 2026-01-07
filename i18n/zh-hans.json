@@ -3,8 +3,16 @@
 		"authors": [
 			"Lakejason0",
 			"Liuxinyu970226",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Peterxy12"
 		]
 	},
-	"pushtowatch-desc": "允许推送页面到另一个用户的监视列表"
+	"pushtowatch-desc": "允许推送页面到另一个用户的监视列表",
+	"pushtowatch": "推送来监视：",
+	"pushtowatch-email-body": "嗨$1：\n\n$2邀请您观看$3\n\n太棒了！\n\n{{SITENAME}}团队感谢您",
+	"pushtowatch-email-subject": "监视列表注入 - $1",
+	"pushtowatch-error": "无法添加'''$1'''到监视列表",
+	"pushtowatch-followers": "关注者：$1",
+	"pushtowatch-no-followers": "没有关注者",
+	"right-pushtowatch": "不经相关用户同意，将页面推送到其他用户的监视列表"
 }
