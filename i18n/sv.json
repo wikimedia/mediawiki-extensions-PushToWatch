@@ -2,12 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Lokal Profil",
-			"Sabelöga"
+			"Sabelöga",
+			"Stefan2255"
 		]
 	},
 	"pushtowatch-desc": "Gör det möjligt att skicka en sida till en annan användares bevakningslista",
+	"pushtowatch": "Tryck för att titta:",
 	"pushtowatch-email-body": "Hej $1,\n\n$2 bad dig att bevaka $3\n\nGratulerar!\n\nTack,\n\n{{SITENAME}}-teamet",
+	"pushtowatch-email-subject": "Injektion på bevakningslistan – $1",
 	"pushtowatch-error": "Kunde inte lägga till '''$1''' i bevakningslistan",
 	"pushtowatch-followers": "Följare: $1",
-	"pushtowatch-no-followers": "Inga följare"
+	"pushtowatch-no-followers": "Inga följare",
+	"right-pushtowatch": "Flytta sidor till andra användares bevakningslista utan den berörda användarens samtycke"
 }
