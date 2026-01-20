@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"pushtowatch-desc": "Erméiglecht et eng Säit op engem anere Benotzer seng Iwwerwaachungslëscht ze setzen",
+	"pushtowatch": "Op d'Iwwerwaachungslëscht setze vum:",
+	"pushtowatch-email-body": "Salut $1,\n\nde Benotzer $2 huet Iech gebiede fir $3 z'iwwerwaachen\n\nGléckwonsch!\n\nMerci,\n\nD'{{SITENAME}}-Team",
+	"pushtowatch-email-subject": "Iwwerwaachungslëscht-Injektioun – $1",
+	"pushtowatch-error": "'''$1''' konnt net op d'Iwwerwaachungslëscht gesat ginn",
+	"pushtowatch-followers": "Follower: $1",
+	"pushtowatch-no-followers": "Keng Follower",
+	"right-pushtowatch": "Säiten op d'Iwwerwaachungslëscht vun engem anere Benotzer setzen, ouni deem Benotzer seng Zoustëmmung"
+}
