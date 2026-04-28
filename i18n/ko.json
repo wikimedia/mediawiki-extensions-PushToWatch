@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Kwj2772",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
 	"pushtowatch-desc": "다른 사용자의 주시문서 목록에 문서를 추가할 수 있도록 합니다",
+	"pushtowatch": "주시문서 목록에 추가:",
 	"pushtowatch-email-body": "안녕하십니까, $1님\n\n$2님이 $3 문서의 주시를 요청하였습니다\n\n축하합니다!\n\n감사합니다,\n\n{{SITENAME}} 팀",
 	"pushtowatch-error": "'''$1''' 항목을 주시문서 목록에 추가하지 못했습니다",
 	"pushtowatch-followers": "팔로워: $1",
