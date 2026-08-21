@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"pushtowatch-desc": "Umožňuje pridať stránku do zoznamu sledovaných stránok iného používateľa",
+	"pushtowatch": "Pridať na sledovanie používateľovi:",
+	"pushtowatch-email-body": "Dobrý deň, $1,\n\npoužívateľ $2 vás požiadal, aby ste sledovali stránku $3\n\nGratulujeme!\n\nĎakujeme,\n\ntím {{GRAMMAR:genitív|{{SITENAME}}}}",
+	"pushtowatch-email-subject": "Pridanie do zoznamu sledovaných stránok – $1",
+	"pushtowatch-error": "Stránku sa nepodarilo pridať do zoznamu sledovaných stránok používateľa '''$1'''",
+	"pushtowatch-followers": "Sledujúci: $1",
+	"pushtowatch-no-followers": "Žiadni sledujúci",
+	"right-pushtowatch": "Pridávať stránky do zoznamov sledovaných stránok iných používateľov bez ich súhlasu"
+}
